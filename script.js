@@ -1,8 +1,20 @@
 function openGoogleSheet(sheetName) {
-    // Google 스프레드시트를 불러오는 코드를 여기에 추가
-    // 예를 들어, iframe을 사용하여 Google 스프레드시트를 표시할 수 있습니다.
-    // 아래는 예시 코드입니다.
+    var spreadsheetURLs = {
+		'Menu1': 'https://docs.google.com/spreadsheets/d/1_PLrXHsyhMZyF9YXAm-Q7IHpT3i_wq2yRXdEVIjnFzY/edit#gid=0',
+        'Menu2': 'https://docs.google.com/spreadsheets/d/1uUKfVgbbchOzAuhDyvMB2f4nG0Z2hHr4yI6PQIFfdqY/edit#gid=1888316717',
+        'Menu3': 'https://docs.google.com/spreadsheets/d/1cl-V-GkSNTWqNDFKftPViy0NQmmvCp440f-o8lxsppw/edit#gid=900677335',
+		'Menu4': 'https://docs.google.com/spreadsheets/d/1-2Ysl8kz05jwIC5kAn0D-qD3fFFqSjbX_wWSEuSt5qg/edit#gid=472377989',
+		'Menu5': 'https://docs.google.com/spreadsheets/d/14SbODhtCMelkIIfxdkfIPJp_XpFlkYKSkbiF5F36RmI/edit#gid=1113308512',
+		'Menu6': 'https://docs.google.com/spreadsheets/d/1xfaZG9K8CgqW6WCB6WrZ_62eaRWWCAGcLqXL4gkFyh0/edit#gid=1002223136',
+        // 다른 메뉴에 대한 스프레드시트 URL 추가
+    };
 
-    var contentDiv = document.getElementById('content');
-    contentDiv.innerHTML = `<iframe src="https://docs.google.com/spreadsheets/d/스프레드시트_아이디/edit#gid=${sheetName}" width="100%" height="600px"></iframe>`;
+    var spreadsheetURL = spreadsheetURLs[sheetName];
+
+    if (spreadsheetURL) {
+        var iframeCode = '<iframe src="' + spreadsheetURL + '/pubhtml" width="100%" height="100%"></iframe>';
+        document.getElementById('frame').innerHTML = iframeCode;
+    } else {
+        console.error('해당하는 스프레드시트가 없습니다.');
+    }
 }
