@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹페이지</title>
+    <title>WORK SPACE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="menu">
+			<img src="https://lh3.googleusercontent.com/NrSIKUWs6X9OTfkkE2puohDGyk2G7qqU46U6QxyZCKXk0ePokn_J6n3XFJWzTwuzwhR55w=w16383" alt="Menu Image"> <!-- 이미지 추가 -->
             <ul>
-                <li><a href="https://docs.google.com/spreadsheets/d/1_PLrXHsyhMZyF9YXAm-Q7IHpT3i_wq2yRXdEVIjnFzY/edit#gid=0" onclick="openGoogleSheet('Sheet1')">2024 RMA 관리 시스템</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/d/1uUKfVgbbchOzAuhDyvMB2f4nG0Z2hHr4yI6PQIFfdqY/edit#gid=1888316717" onclick="openGoogleSheet('Sheet2')">RMA 관리</a></li>
-		<li><a href="https://docs.google.com/spreadsheets/d/1cl-V-GkSNTWqNDFKftPViy0NQmmvCp440f-o8lxsppw/edit#gid=900677335" onclick="openGoogleSheet('Sheet3')">생산관리</a></li>
-		<li><a href="https://docs.google.com/spreadsheets/d/1X-xtBVlPRoNNqSdid5ddyVi7cLJgUq23ti_3tTqAPiI/edit#gid=2034783887" onclick="openGoogleSheet('Sheet4')">품의서</a></li>
-		<!-- 추가적인 메뉴들을 필요에 따라 추가할 수 있습니다. -->
+				<li onclick="openGoogleSheet('Menu1')">RMA관리시스템(2024)</li>
+                <li onclick="openGoogleSheet('Menu2')">RMA관리</li>
+                <li onclick="openGoogleSheet('Menu3')">생산관리</li>
+				<li onclick="openGoogleSheet('Menu4')">양산관리</li>
+				<li onclick="openGoogleSheet('Menu5')">셀링스 자재 관리</li>
+				<li onclick="openGoogleSheet('Menu6')">에스앤하이텍 셀링스향 자재 현황</li>
+                <!-- 다른 메뉴 버튼들도 같은 방식으로 추가 가능 -->
             </ul>
         </div>
-        <div class="content" id="content"></div>
+        <div class="frame" id="frame">
+            <!-- 프레임 내용이 여기에 나타납니다 -->
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
