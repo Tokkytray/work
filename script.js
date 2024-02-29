@@ -9,6 +9,7 @@ function openGoogleSheet(sheetName) {
 		'Menu7': 'https://docs.google.com/spreadsheets/d/1nVJlgofxKVQib6a4TOQY4c7glLYK2Vc1Wayd8Ra21-g/edit#gid=1038351251',
 		'Menu8': 'https://docs.google.com/spreadsheets/d/1MJMmFLVygTFgV6k1M2g8N-cKEYBBk4MCuHY6EhiChnc/edit#gid=851632209',
 		'Menu9': 'https://docs.google.com/spreadsheets/d/132P1Ia9xgxpdQcezkypK-GGpLaJ8RlwuLFQ5M-khyxk/edit#gid=20660227',
+		'Menu10': 'https://docs.google.com/document/d/1Jz9CQxPU24gsIe0Nov9m2_LcofdOWRKfg5-gFDnHNgo/edit?usp=sharing',
         // 다른 메뉴에 대한 스프레드시트 URL 추가
     };
 
